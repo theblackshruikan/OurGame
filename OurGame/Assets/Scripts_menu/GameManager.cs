@@ -64,4 +64,10 @@ public class GameManager : MonoBehaviour {
         canvasLoad.enabled = false;
         canvasOption.enabled = false;
     }
+
+    public void BackButton(Canvas presentCanvas)
+    {
+        presentCanvas.enabled = false;
+        canvasMenu.enabled = true;
+    }
 }
