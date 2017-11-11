@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour {
+public class ButtonManager: MonoBehaviour {
     public UIManager ui;
     public Canvas canvasMenu;
     public Canvas canvasNew;
@@ -25,34 +25,7 @@ public class GameManager : MonoBehaviour {
     {
         
     }
-
-    public void NewGame()
-    {
-        canvasMenu.enabled = false;
-        canvasNew.enabled = true;
-    }
-
-    public void LoadGame()
-    {
-        canvasLoad.enabled = true;
-        canvasMenu.enabled = false;
-
-    }
-
-    public void DeleteGame()
-    {
-        canvasLoad.enabled = true;
-        canvasMenu.enabled = false;
-
-    }
-
-    public void Option()
-    {
-        canvasOption.enabled = true;
-        canvasMenu.enabled = false;
-
-    }
-
+    
     public void Exit()
     {
         Application.Quit();
@@ -63,6 +36,12 @@ public class GameManager : MonoBehaviour {
         canvasNew.enabled = false;
         canvasLoad.enabled = false;
         canvasOption.enabled = false;
+    }
+
+    public void NextButton(Canvas nextCanvas)
+    {
+        canvasMenu.enabled = false;
+        nextCanvas.enabled = true;
     }
 
     public void BackButton(Canvas presentCanvas)
