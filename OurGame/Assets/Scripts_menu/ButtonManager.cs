@@ -49,4 +49,9 @@ public class ButtonManager: MonoBehaviour {
         presentCanvas.enabled = false;
         canvasMenu.enabled = true;
     }
+
+    public void NewGame()
+    {
+
+    }
 }
