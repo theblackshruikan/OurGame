@@ -13,4 +13,9 @@ public class UIManager : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    private void ChangeDifficulty()
+    {
+         
+    }
 }
