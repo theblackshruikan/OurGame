@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Something.unity
+- path: Assets/KyCity.unity
   isLoaded: 1
   isActive: 1

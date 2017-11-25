@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Octavia;
 
 public class ButtonManager: MonoBehaviour {
     public UIManager ui;
@@ -8,6 +9,11 @@ public class ButtonManager: MonoBehaviour {
     public Canvas canvasNew;
     public Canvas canvasLoad;
     public Canvas canvasOption;
+
+    Game game;
+    Difficulty difficulty;
+    string bandName;
+    StyleBand styleBand;
 
     // Use this for initialization
     void Start () {
@@ -38,13 +44,13 @@ public class ButtonManager: MonoBehaviour {
         canvasOption.enabled = false;
     }
 
-    public void NextButton(Canvas nextCanvas)
+    public void NextCanvasButton(Canvas nextCanvas)
     {
         canvasMenu.enabled = false;
         nextCanvas.enabled = true;
     }
 
-    public void BackButton(Canvas presentCanvas)
+    public void BackCanvasButton(Canvas presentCanvas)
     {
         presentCanvas.enabled = false;
         canvasMenu.enabled = true;
@@ -52,7 +58,7 @@ public class ButtonManager: MonoBehaviour {
 
     public void NewGame()
     {
-
+        game = new Game(difficulty, styleBand, bandName);
+        Application.LoadLevel("KyCity");
     }
-    
 }
