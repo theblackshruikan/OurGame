@@ -220,11 +220,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts_menu\ButtonManager.cs" />
+    <Compile Include="Assets\Scripts_menu\Controller2D.cs" />
     <Compile Include="Assets\Scripts_menu\Enum.cs" />
     <Compile Include="Assets\Scripts_menu\Game.cs" />
     <Compile Include="Assets\Scripts_menu\LoadGame.cs" />
     <Compile Include="Assets\Scripts_menu\Menus.cs" />
     <Compile Include="Assets\Scripts_menu\MusicManager.cs" />
+    <Compile Include="Assets\Scripts_menu\Player.cs" />
+    <Compile Include="Assets\Scripts_menu\PlayerController.cs" />
     <Compile Include="Assets\Scripts_menu\UIManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

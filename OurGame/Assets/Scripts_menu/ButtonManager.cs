@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using Octavia;
 
@@ -59,6 +60,6 @@ public class ButtonManager: MonoBehaviour {
     public void NewGame()
     {
         game = new Game(difficulty, styleBand, bandName);
-        Application.LoadLevel("KyCity");
+        SceneManager.LoadScene("KyCity");
     }
 }
